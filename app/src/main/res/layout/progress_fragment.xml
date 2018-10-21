@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#F15F5F"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오늘 하루도 Let`s Get it!"
+                />
+        </LinearLayout>
+
+
+
+
+        <com.example.paparazzi.paparazzi_planer.CircleDisplay
+            android:layout_marginTop="10dp"
+            android:id="@+id/circleDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:textColor="#CC3D3D"
+                android:id="@+id/list_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  1"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개의 할 일이 등록되었고,"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:textColor="#CC3D3D"
+                android:id="@+id/list_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   1"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개의 할 일을 완료했어요."
+                android:textSize="16dp" />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/img_run"
+                android:src="@drawable/running"
+                android:layout_width="match_parent"
+                android:layout_height="300px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

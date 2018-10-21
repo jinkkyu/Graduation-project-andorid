@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/update"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="수정하기"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="삭제하기"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/important"
+        android:icon="@drawable/star"
+        android:title="중요한것"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/check"
+        android:icon="@drawable/checkmark"
+        android:title="할일완료하기"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+</menu>

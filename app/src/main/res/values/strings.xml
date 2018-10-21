@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CheckList</string>
+    <string name="title_home">오늘의 할 일</string>
+    <string name="title_dashboard">진행사항</string>
+    <string name="title_notifications">설정</string>
+    <string name="helper_choice">설정</string>
+    <!--카카오 네이티브 키값-->
+    <string name="kakao_app_key">d0dc8f555ac759c414125e5ac63ab30f</string>
+
+</resources>

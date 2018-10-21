@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paparazzi.paparazzi_planer">
+    <!--인터넷 접속권한-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--진동 권한-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!--핸드폰화면꺼져있어도 작동되도록 하는 권한-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--입력저장장치 권한-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--카메라 권한-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 음성을 입력받기 위한 RECORD AUDIO 권한 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--전화와 메시지를 보내기 위한 퍼미션-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+
+
+
+
+    <application
+        android:name=".Login.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/checkmark"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/checkmark"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".AddAtivity"><!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".UpdateActivity"><!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".MyInformationActivity">
+        <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+
+
+        <activity android:name=".KakaoSignupActivity"/>
+
+        <activity android:name=".Guide.ViewPagerActivity"/>
+
+        <activity android:name=".ViewActivity">
+            <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".SmartListActivity">
+            <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".Setting.SettingOptionActivity1">
+            <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Setting.SettingOptionActivity2">
+            <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Setting.SettingOptionActivity3">
+            <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Setting.SettingOptionActivity4">
+            <!--뒤로가기 버튼 누르면 메인화면으로 이동-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- 네이버 추가 -->
+
+        <activity
+            android:name=".Naver.DetailFavoriteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Naver.FavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Naver.OpenSourceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Naver.DetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity android:name=".Naver.NaverActivity"/>-->
+        <activity android:name=".Helper_Fragment.CardView"></activity>
+        <!--카카오 로그인-->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="d0dc8f555ac759c414125e5ac63ab30f" />
+
+        <receiver android:name=".AlarmReceiver"/>
+    </application>
+
+</manifest>
